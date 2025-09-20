@@ -55,8 +55,8 @@
 }
 
 .theme-toggle {
-  background: transparent;
-  border: 1px solid #555;
+  background: var(--accent-bg);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   width: 36px;
   height: 36px;
@@ -64,17 +64,38 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .theme-toggle:hover {
-  border-color: #777;
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-hover);
+  background: var(--accent-hover);
+  transform: scale(1.05);
 }
 
 .theme-toggle svg {
-  color: white;
+  color: var(--text-primary);
   stroke-width: 2;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle.dark svg {
+  color: #ffd700;
+}
+
+.theme-toggle.light svg {
+  color: #4a90e2;
+}
+
+/* Animación de rotación para el cambio de tema */
+.theme-toggle svg {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:active svg {
+  transform: rotate(180deg) scale(0.9);
 }
 
 /* Responsive design */
