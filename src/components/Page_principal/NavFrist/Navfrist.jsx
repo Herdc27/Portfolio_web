@@ -23,7 +23,7 @@ const Navfrist = () => {
           Hoja de vida
         </a>
         <a
-          href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20tus%20servicios"
+          href="https://wa.me/573157118122?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20tus%20servicios"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
