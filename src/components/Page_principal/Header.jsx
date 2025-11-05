@@ -32,7 +32,7 @@ const Header = () => {
               </svg>
             </a>
             <a
-              href="www.linkedin.com/in/héctor-diaz-camacho-637150258"
+              href="https://www.linkedin.com/in/h%C3%A9ctor-diaz-camacho-637150258/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
